@@ -1,0 +1,373 @@
+:root {
+    --main-Color: hsl(192, 100%, 9%);;
+    --pink-Color: hsl(322, 100%, 66%);
+    --pale-Color: hsl(193, 100%, 96%);
+    --grayish-Blue: hsl(208, 11%, 55%);
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+/* ::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--color-pink);
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #ecaab2;
+}
+::-webkit-scrollbar-track{
+    background: var(--color-lightPink);
+} */
+.container {
+    margin: 0 auto;
+}
+.home {
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-size: cover;
+    background-color: #edfbfe;
+}
+.home header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 53px 10px;
+}
+.home header img {
+    width: 200px;
+}
+.home header button {
+    border: none;
+    padding: 16px 65px;
+    border-radius: 50px;
+    font-size: 14px;
+    box-shadow: 1px 2px 9px 1px #e2e2e2;
+    background: white;
+    font-weight: bold;
+    color: var(--main-Color);
+}
+.home .container > div {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 50px;
+}
+.home .container div .pageTitle {
+    max-width: 500px;
+}
+.title {
+    color: var(--main-Color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.home .container div .title {
+    font-size: 38px;
+    padding-bottom: 30px;
+}
+.home .container div .paragraph {
+    font-size: 17.5px;
+    line-height: 1.3;
+    color: var(--main-Color);
+    padding-bottom: 30px;
+}
+.home .container div button {
+    background: var(--pink-Color);
+    border: none;
+    color: white;
+    padding: 21px 75px;
+    border-radius: 50px;
+    transition: .3s;
+    margin-bottom: 40px;
+}
+.home .container div button:hover {
+    background: #ff9bdc;
+}
+/* .home .container div .pageImage {
+    width: 700px;
+} */
+.home .container div .pageImage img {
+    width: 100%;
+}
+.ourServices {
+    padding: 120px 0 200px;
+}
+.ourServices .container {
+    padding: 10px 5px 50px;
+}
+.ourServices .container > div {
+    display: flex;
+    align-items: center;
+    height: 440px;
+    justify-content: space-between;
+    padding: 20px 20px 20px 120px;
+    box-shadow: 0 0 20px -7px #c3c3c3;
+    border-radius: 16px;
+    margin: 38px 24px;
+}
+.ourServices .container .flowing-conversation {
+    flex-direction: row-reverse;
+    gap: 30px;
+}
+.ourServices .container .content {
+    width: 500px;
+}
+.ourServices .container .content .title {
+    font-size: 28px;
+    color: var(--main-Color);
+}
+.ourServices .container .content .paragraph {
+    font-size: 18px;
+    color: var(--grayish-Blue);
+    line-height: 1.5;
+    padding-top: 15px;
+}
+.ourServices .container .img {
+    max-width: 400px;
+}
+.ourServices .container img {
+    width: 100%;
+}
+footer {
+    background: var(--main-Color);
+    color: white;
+    position: relative;
+}
+footer .boxCard {
+    position: absolute;
+    border-radius: 16px;
+    box-shadow: 0 0 20px -7px #0000004f;
+    width: 800px;
+    background-color: white;
+    transform: translate(-50%,-60%);
+    left: 50%;
+    color: var(--main-Color);
+    text-align: center;
+}
+footer .boxCard h1 {
+    margin: 70px 70px 30px;
+}
+footer .boxCard button {
+    background: var(--pink-Color);
+    border: none;
+    color: white;
+    border-radius: 50px;
+    transition: .3s;
+    margin-bottom: 50px;
+    height: 75px;
+    width: 370px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0px 4px 10px 0 #00000036;
+}
+footer .boxCard button:hover {
+    background: #ff9bdc;
+}
+footer .container .boxLinks {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* height: 450px; */
+    gap: 20px;
+    padding: 0 40px;
+}
+footer .container .boxLinks > div {
+    height: 200px;
+    min-width: 180px;
+    font-size: 18px;
+}
+footer .container .boxLinks > div a {
+    color: #fffeff;
+}
+footer .container .boxLinks > div li {
+    padding-bottom: 15px;
+}
+footer .container .boxLinks .location li {
+    display: flex;
+    gap: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+footer .container .boxLinks .location li:first-child a:first-child {
+    margin-top: 5px;
+}
+footer .container .boxLinks div:first-child{
+    max-width: 490px;
+}
+footer .container .boxLinks div:nth-child(2){
+    width: 200px;
+}
+footer .container .boxLinks div:nth-child(3){
+    width: 200px;
+}
+footer .container .boxLinks div:last-child{
+    width: 250px;
+}
+footer .container .boxLinks div:last-child ul {
+    display: flex;
+    gap: 15px;
+}
+footer .container .boxLinks div:last-child ul a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+}
+footer .end {
+    font-size: 12px;
+    text-align: end;
+    height: 100px;
+    padding-top: 20px;
+}
+footer .imglogo {
+    padding: 140px 0 10px 35px;
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 678px;
+    }
+}
+@media (max-width: 991px){
+    .home header {
+        padding: 25px 15px;
+    }
+    .home header img {
+        width: 130px;
+    }
+    .home header button {
+        padding: 8px 30px;
+    }
+    .home .container > div {
+        flex-direction: column;
+        text-align: center;
+    }
+    .home .container div .title {
+        font-size: 32px;
+    }
+    .home .container div .pageTitle {
+        max-width: 360px;
+        padding-top: 80px;
+        line-height: 1.4;
+    }
+    .home .container div .paragraph {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    .home .container div .pageImage {
+        min-width: 390px;
+        padding: 0 35px;
+    }
+    .ourServices {
+        padding: 30px 0 200px;
+    }
+    .ourServices .container > div {
+        height: fit-content;
+        padding: 20px;
+        margin: 38px 20px;
+        flex-direction: column-reverse;
+    }
+    .ourServices .container .flowing-conversation {
+        flex-direction: column-reverse;
+    }
+    .ourServices .container .content {
+        width: fit-content;
+        text-align: center;
+        padding: 0 22px 10px;
+    }
+    .ourServices .container .img {
+        max-width: 80%;
+        padding: 50px 0;
+    }
+    footer .boxCard {
+        width: 440px;
+    }
+    footer .boxCard h1 {
+        margin: 70px 10px 30px;
+        font-size: 24px;
+    }
+    footer .boxCard button {
+        height: 55px;
+        width: 270px;
+        font-size: 14px;
+    }
+    footer .imglogo {
+        padding: 160px 0 10px 15px;
+        width: 240px;
+    }
+    footer .imglogo img {
+        width: 100%;
+    }
+    footer .container .boxLinks {
+        align-items: start;
+        padding: 0px 20px;
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+    footer .container .boxLinks > div {
+        width: fit-content;
+        height: fit-content;
+    }
+    footer .container .boxLinks div:last-child {
+        width: 100%;
+    }
+    footer .container .boxLinks div:last-child ul {
+        justify-content: center;
+    }
+    footer .end {
+        font-size: 14px;
+        text-align: center;
+        height: 100px;
+        padding-top: 20px;
+    }
+    footer .end {
+        text-align: center;
+    }
+}
+@media (max-width: 1023px){
+    .container {
+        max-width: 767px;
+    }
+}
+@media (max-width: 1279px){
+    .container {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px){
+    .container {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 440px) {
+    footer .boxCard {
+        width: 360px;
+    }
+    footer .boxCard h1 {
+        margin: 40px 10px 20px;
+        font-size: 20px;
+    }
+    footer .boxCard button {
+        height: 50px;
+        width: 240px;
+        margin-bottom: 40px;
+    }
+}
